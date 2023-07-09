@@ -18,6 +18,7 @@
 body {
   background-color: var(--light);
 }
+/* Первая страница */
 
 /* Контейнеры */
 .big_container {
@@ -171,12 +172,15 @@ body {
   text-align: center;
   margin-bottom: 40px;
 }
+.services__link {
+  text-decoration: none;
+  color: var(--basic);
+}
 
 /* Элементы проектов */
 .projects__cards {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-around;
 }
 .project__card {
@@ -259,8 +263,8 @@ body {
 .blog__desc {
   font-size: 18px;
   margin-top: 50px;
+  margin-bottom: 120px;
 }
-/* Элементы блока с клиентами */
 .watch-more {
   color: var(--basic);
   font-weight: 500;
@@ -268,6 +272,7 @@ body {
   text-transform: uppercase;
   font-family: var(--heading);
 }
+/* Элементы блока с клиентами */
 .cards__client {
   margin-top: 30px;
   display: flex;
@@ -275,66 +280,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
-
-/* Маркированный список */
-ul {
-  margin: 0;
-}
-ul {
-  list-style-type: none;
-}
-ul > li {
-  text-indent: -17px;
-  padding: 2.5px;
-}
-ul > li:before {
-  content: '— ';
-  text-indent: -17px;
-}
-/* Переиспользуемые элементы */
-.btn {
-  cursor: pointer;
-  appearance: none;
-  border: 0;
-  padding: 10px 20px;
-  border-radius: 100px;
-  background-color: transparent;
-  text-transform: uppercase;
-  border: 1px solid;
-}
-.btn__light {
-  color: var(--light);
-  border-color: var(--light);
-}
-.btn__accent {
-  color: var(--light);
-  background-color: var(--accent);
-}
-
-.cards {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.card {
-  cursor: pointer;
-  width: 350px;
-  height: 424px;
-  border: 1px solid var(--secondary_light);
-  border-radius: 3%;
-  padding: 30px;
-  margin-bottom: 3%;
-}
-.title {
-  font-family: var(--heading);
-}
-
-/* Элементы при наведении */
-.card:hover {
-  color: var(--light);
-  background-color: var(--accent);
-}
-
+/* Элементы пре-футера */
 .pre-foter__img {
   width: 100%;
 }
@@ -361,6 +307,7 @@ ul > li:before {
   height: 50px;
   font-weight: 700;
 }
+/* Элементы футера */
 
 .footer__wrapper {
   display: grid;
@@ -374,6 +321,7 @@ ul > li:before {
 .footer__menu {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .menu__services {
   display: flex;
@@ -430,4 +378,66 @@ ul > li:before {
 }
 .social:not(:last-child) {
   margin-right: 20px;
+}
+
+/* Маркированный список */
+ul {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+}
+ul > li {
+  text-indent: -17px;
+  padding: 2.5px;
+}
+ul > li:before {
+  content: '— ';
+  text-indent: -17px;
+}
+/* Переиспользуемые элементы */
+.btn {
+  cursor: pointer;
+  appearance: none;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 1px solid;
+}
+.btn__light {
+  color: var(--light);
+  border-color: var(--light);
+}
+.btn__accent {
+  color: var(--light);
+  background-color: var(--accent);
+}
+.btn__accent-light {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  cursor: pointer;
+  width: 350px;
+  height: 424px;
+  border: 1px solid var(--secondary_light);
+  border-radius: 3%;
+  padding: 30px;
+  margin-bottom: 3%;
+}
+.title {
+  font-family: var(--heading);
+}
+
+/* Элементы при наведении */
+.card:hover {
+  color: var(--light);
+  background-color: var(--accent);
 }

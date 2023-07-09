@@ -1,5 +1,7 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
+  slidesPerView: 'auto',
+  spaceBetween: 5,
   loop: true,
   autoplay: {
     delay: 4000, // Интервал между сменой слайдов (в миллисекундах)

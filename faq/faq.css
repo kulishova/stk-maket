@@ -20,9 +20,10 @@
 }
 
 details {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  /* height: 82px; */
   overflow: hidden;
   margin-bottom: 1.5rem;
   text-align: center;
@@ -38,9 +39,10 @@ summary::marker {
   display: none;
 }
 summary {
+  max-width: 720px;
+  margin: 0 auto;
   display: block;
   padding: 1.8em 1em 0.3em 0.9em;
-  /* border-bottom: 1px solid #e2e8f0; */
   font-size: 18px;
   cursor: pointer;
   position: relative;
