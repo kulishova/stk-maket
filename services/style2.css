@@ -1,14 +1,39 @@
 body {
   color: var(--basic);
 }
+/* Галерея */
 .lightgallery {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
+.gallery-container {
+  min-width: 1400px;
+  margin: auto;
+  padding: 0 12%;
+}
+/* Блоки */
 .fs-page-1 {
 }
+.complex-services {
+}
+.complex-services__container {
+  margin: 13% 20% 50px;
+}
+.consultation {
+  margin: 4% 20% 6%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.article {
+  margin: 12% 26% 6%;
+}
+/* Шапка */
 .header__services {
   margin-bottom: 8% !important;
 }
+/* Ссылки */
 .link-services {
   text-decoration: none;
   color: var(--basic);
@@ -18,42 +43,30 @@ body {
 .link-services:hover {
   color: var(--accent);
 }
-.fs-page-1__intro {
-  font-size: 14px;
-}
 .link_main {
   text-decoration: none;
   color: var(--accent);
   margin-bottom: 20px;
 }
-
-.services-desc {
-  display: grid;
-  grid-template-columns: 6fr 6fr;
-  margin: 20px 0 50px 0;
+.read-more {
+  cursor: pointer;
+  appearance: none;
+  border: 0;
+  padding: 10px 20px;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight: 600;
+  left: 69%;
+  margin-top: 3%;
+  position: relative;
 }
+/* Текст */
+/* заголовки */
 .services-desc__title {
   font-size: 50px;
   font-family: var(--heading);
   font-weight: 600;
   text-transform: uppercase;
-}
-
-.fs-page-1__img {
-  width: 100%;
-}
-.services-desc__info {
-  margin-left: 40%;
-  line-height: 1.8em;
-  font-size: 17px;
-  position: relative;
-  top: 17%;
-}
-
-.complex-services {
-}
-.complex-services__container {
-  margin: 13% 20% 50px;
 }
 .complex-services__title {
   font-weight: 500;
@@ -73,6 +86,57 @@ body {
   line-height: 1.5em;
   text-align: justify;
 }
+.article__title {
+  font-size: 40px;
+  font-family: var(--heading);
+}
+.consultation__title {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: var(--heading);
+}
+.complex-services__container_title {
+  font-weight: 700;
+}
+/* Текст страницы */
+.fs-page-1__intro {
+  font-size: 14px;
+}
+.services-desc {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  margin: 20px 0 50px 0;
+}
+.services-desc__info {
+  margin-left: 40%;
+  line-height: 1.8em;
+  font-size: 17px;
+  position: relative;
+  top: 17%;
+}
+.article__text {
+  margin-top: 50px;
+  display: block;
+  height: 400px;
+  outline: none;
+  overflow: hidden;
+  line-height: 1.8em;
+}
+
+/* картинкм */
+.fs-page-1__img {
+  width: 100%;
+}
+
+.img-main {
+  margin-top: 12%;
+}
+.img-main__base {
+  width: 100%;
+}
+
+/* Оформление */
+/* Нумерованный список */
 .work {
   border-top: 1px solid var(--secondary_light);
   height: 80px;
@@ -91,54 +155,8 @@ body {
   border-bottom: 1px solid var(--secondary_light);
 }
 
-.consultation {
-  margin: 4% 20% 6%;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-}
-.complex-services__container {
-}
-.consultation__title {
-  font-size: 30px;
-  font-weight: 500;
-  font-family: var(--heading);
-}
-
-.article {
-  margin: 12% 26% 6%;
-}
-.article__title {
-  font-size: 40px;
-  font-family: var(--heading);
-}
-.article__text {
-  margin-top: 50px;
-  display: block;
-  height: 400px;
-  outline: none;
-  overflow: hidden;
-  line-height: 1.8em;
-}
-.read-more {
-  cursor: pointer;
-  appearance: none;
-  border: 0;
-  padding: 10px 20px;
-  background-color: transparent;
-  text-transform: uppercase;
-  font-weight: 600;
-  left: 69%;
-  margin-top: 3%;
-  position: relative;
-}
+/* Скрыть текст*/
 .article__text:focus,
 :focus ~ .article__text {
   height: auto;
-}
-
-.img-main {
-  margin-top: 12%;
-}
-.img-main__base {
-  width: 100%;
 }
