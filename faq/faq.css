@@ -50,7 +50,7 @@ summary {
   height: 82px;
   text-align: center;
 }
-summary:hover {
+details.details:hover {
   background-color: var(--accent);
   color: var(--light);
 }

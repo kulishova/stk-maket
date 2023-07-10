@@ -409,6 +409,7 @@ ul > li:before {
   background-color: transparent;
   text-transform: uppercase;
   border: 1px solid;
+  width: auto;
 }
 .btn__light {
   color: var(--light);

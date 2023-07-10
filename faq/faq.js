@@ -16,8 +16,6 @@ function accordion(event) {
   }
 }
 
-// const clickBtn = document.querySelector('.details')
-// clickBtn.addEventListener('click', function () {
-
-// })
-// console.log(clickBtn)
+const summary = document.querySelectorAll('summary')
+console.log(summary)
+summary.addEventListener('click')
