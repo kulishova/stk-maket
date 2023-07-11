@@ -1,0 +1,25 @@
+.fs-page-1__intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.filter {
+  font-weight: 500;
+  font-size: 18px;
+  font-family: var(--heading);
+}
+.date {
+}
+.date__link {
+  text-decoration: none;
+  color: var(--basic);
+  font-weight: 500;
+  font-size: 18px;
+  font-family: var(--heading);
+}
+.date__link:hover {
+  color: var(--accent);
+}
+.date__link_active {
+  color: var(--accent);
+}
