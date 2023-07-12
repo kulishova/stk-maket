@@ -1,19 +1,15 @@
-.article__text {
-  margin-top: 50px;
-  /* display: block; */
-  height: 100%;
-  /* outline: none; */
-  /* overflow: hidden; */
-  line-height: 1.8em;
-}
-
 .complex__works_img {
-  position: relative;
-  left: 14%;
   margin: 5%;
 }
-.consultation {
+/* .consultation {
   margin: 4% 6% 6%;
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
+.gallery-container {
+  padding: 0px 8%;
+}
+
+.consultation {
+  margin: 4% 0% 6%;
+} */

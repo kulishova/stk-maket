@@ -15,7 +15,6 @@
 }
 
 .faq__container {
-  /* max-width: 800px; */
   height: 100%;
 }
 
@@ -39,7 +38,7 @@ summary::marker {
   display: none;
 }
 summary {
-  max-width: 720px;
+  max-width: 760px;
   margin: 0 auto;
   display: block;
   padding: 1.8em 1em 0.3em 0.9em;
@@ -48,11 +47,12 @@ summary {
   position: relative;
   text-transform: uppercase;
   height: 82px;
-  text-align: center;
+  text-align: left;
 }
 details.details:hover {
   background-color: var(--accent);
   color: var(--light);
+  transition-duration: 1.5s;
 }
 summary:before {
   top: 1.8em;
@@ -66,16 +66,17 @@ summary:before {
   transition: transform 0.5s;
 }
 summary > p {
-  right: 28.1em;
+  /* right: 28.1em; */
+  text-align: left;
 }
 details[open] > summary:before {
   transform: scale(1, -1);
 }
 summary ~ * {
-  padding: 2em 30em 29px 34.4em;
+  padding: 2em 30em 29px 20.4em;
 }
 details[open] summary ~ * {
-  animation: sweep 0.5s ease-in-out;
+  animation: sweep 0s ease-in-out;
 }
 @keyframes sweep {
   0% {
@@ -87,12 +88,13 @@ details[open] summary ~ * {
 }
 summary:focus {
   outline: 0;
-  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3), inset 0 0 2px rgba(0, 0, 0, 0.3);
+  /* box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3), inset 0 0 2px rgba(0, 0, 0, 0.3); */
 }
 
 .active {
   background-color: var(--accent);
   color: var(--light);
+  transition-duration: 1.5s;
 }
 p {
   background-color: var(--light);
