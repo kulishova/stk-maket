@@ -1,0 +1,35 @@
+.gallery {
+  display: flex;
+  padding: 2px;
+  transition: 0.3s;
+  justify-content: center;
+}
+.gallery:hover .gallery__image {
+  filter: grayscale(1);
+}
+.gallery__column {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.gallery_hover {
+  margin: 2px;
+  overflow: hidden;
+}
+.gallery_hover:hover .gallery__image {
+  filter: grayscale(0);
+}
+.gallery_hover:hover .gallery__caption {
+  opacity: 1;
+}
+.gallery__thumb {
+  position: relative;
+}
+.gallery__image {
+  display: block;
+  width: 100%;
+  transition: 1.3s;
+}
+.gallery__image:hover {
+  transform: scale(1.1);
+}
