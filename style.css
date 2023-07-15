@@ -450,7 +450,14 @@ ul > li:before {
   border: 1px solid var(--accent);
   color: var(--accent);
 }
-
+.btn__dark {
+  background-color: var(--basic);
+  color: var(--light);
+}
+.btn__dark:hover {
+  background-color: var(--light);
+  color: var(--basic);
+}
 .cards {
   display: flex;
   justify-content: space-around;

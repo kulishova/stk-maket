@@ -23,14 +23,17 @@
 .date__link_active {
   color: var(--accent);
 }
-.project__card_link {
-  text-decoration: none;
-  color: var(--basic);
-}
+
 .projects {
   margin-top: auto;
 }
 
 .fs-page-1 {
   margin: 5% 10% auto;
+}
+.project__card {
+  transition: 1.3s;
+}
+.project__card:hover {
+  transform: scale(1.1);
 }

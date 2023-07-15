@@ -63,6 +63,10 @@ body {
   margin-top: 3%;
   position: relative;
 }
+.card__link {
+  text-decoration: none;
+  color: var(--basic);
+}
 /* Текст */
 /* заголовки */
 .services-desc__title {
@@ -100,6 +104,13 @@ body {
 .complex-services__container_title {
   font-weight: 700;
 }
+
+.slide-content__title {
+  font-weight: 600;
+  font-size: 20px;
+  font-family: var(--heading);
+  text-align: left;
+}
 /* Текст страницы */
 .fs-page-1__intro {
   font-size: 14px;
@@ -124,7 +135,11 @@ body {
   overflow: hidden;
   line-height: 1.8em;
 }
-
+.date {
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: right;
+}
 /* картинкм */
 .fs-page-1__img {
   width: 100%;
