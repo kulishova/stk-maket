@@ -1,4 +1,4 @@
-.gallery {
+/* .gallery {
   display: flex;
   padding: 2px;
   transition: 0.3s;
@@ -12,6 +12,10 @@
   flex-direction: column;
   width: 25%;
 }
+.gallery__row {
+  display: flex;
+  flex-direction: column;
+}
 .gallery_hover {
   margin: 2px;
   overflow: hidden;
@@ -24,12 +28,71 @@
 }
 .gallery__thumb {
   position: relative;
+  border-radius: 4px;
 }
 .gallery__image {
   display: block;
   width: 100%;
   transition: 1.3s;
+  border-radius: 4px;
 }
 .gallery__image:hover {
   transform: scale(1.1);
+} */
+
+/* Стили элементов сетки */
+.grid {
+  display: grid;
+  gap: 10px;
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.grid-item-full {
+  /* grid-column: 1 / span 5; */
+}
+
+.grid-item-2 {
+  /* grid-column: span 2; */
+}
+
+.grid-item-3 {
+  /* grid-column: span 3; */
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 767px) {
+  .grid-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-item-full,
+  .grid-item-2 {
+    grid-column: auto;
+    break-inside: avoid;
+  }
+
+  .grid-item-3 {
+    grid-column: auto;
+    break-inside: avoid;
+  }
+
+  .grid-row:nth-child(4) .grid-item-3:nth-child(1) {
+    grid-column: span 2;
+  }
+  .grid-item,
+  .grid-item-full {
+    justify-self: center;
+  }
 }

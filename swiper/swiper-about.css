@@ -1,0 +1,23 @@
+/* Стили для кнопок навигации */
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  color: var(--secondary_light);
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next {
+  right: 10px;
+}

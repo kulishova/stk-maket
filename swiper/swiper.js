@@ -1,10 +1,10 @@
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
   slidesPerView: 'auto',
-  spaceBetween: 5,
+  centeredSlides: true,
+  spaceBetween: 10 /* Добавляем отступ между слайдами для видимости боковых слайдов */,
   loop: true,
   autoplay: {
-    delay: 4000, // Интервал между сменой слайдов (в миллисекундах)
+    delay: 4000,
   },
 
   // If we need pagination
