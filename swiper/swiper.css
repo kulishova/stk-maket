@@ -40,3 +40,9 @@
   object-fit: cover;
   image-rendering: auto;
 }
+.swiper-slide.swiper-slide-active img {
+  border-radius: 4px;
+}
+.swiper-slide.swiper-slide-prev img {
+  border-radius: 4px;
+}

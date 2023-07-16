@@ -15,12 +15,13 @@
   box-sizing: border-box;
   font-family: var(--content_text);
 }
+
 body {
   background-color: var(--light);
 }
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 /* main {
   width: 1400px;
   margin: 10% auto;
@@ -37,7 +38,7 @@ html {
   width: 100%;
   max-width: 1440px;
   margin: auto;
-  padding: 0 32px;
+  /* padding: 0 32px; */
 }
 
 .card_container {
@@ -205,6 +206,22 @@ html {
   cursor: pointer;
   max-width: 600px;
   margin: 3% 1%;
+  transition: all 1.5s ease-in-out;
+}
+.project__card:hover {
+  background-size: 112% auto;
+}
+.project__card::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
 }
 .project_img {
   width: 100%;
@@ -440,7 +457,7 @@ ul > li:before {
 }
 .btn__light:hover {
   border: 1px solid var(--accent);
-  color: var(--accent);
+  background-color: var(--accent);
 }
 .btn__accent {
   color: var(--light);
@@ -472,7 +489,7 @@ ul > li:before {
   border-radius: 3%;
   padding: 30px;
   margin-bottom: 3%;
-  transition-duration: 1.5s;
+  transition-duration: 0.8s;
 }
 
 /* Элементы при наведении */
@@ -480,3 +497,29 @@ ul > li:before {
   color: var(--light);
   background-color: var(--accent);
 }
+/* .ppk-dot,
+.ppk-dot-outline {
+  z-index: 999;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out,
+    -webkit-transform 0.3s ease-in-out;
+}
+.ppk-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #feac43;
+}
+.ppk-dot-outline {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(254, 172, 67, 0.5);
+} */
