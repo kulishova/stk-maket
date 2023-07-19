@@ -28,6 +28,9 @@ details {
   text-align: center;
   text-align: left;
 }
+details > p {
+  font-size: 3vh;
+}
 summary::-webkit-details-marker {
   display: none;
 }
@@ -42,7 +45,7 @@ summary {
   margin: 0 auto;
   display: block;
   padding: 1.8em 1em 0.3em 0.9em;
-  font-size: 18px;
+  font-size: 3.2vh;
   cursor: pointer;
   position: relative;
   text-transform: uppercase;

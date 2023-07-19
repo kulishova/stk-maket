@@ -127,6 +127,9 @@ body {
   font-size: 14px;
   margin-top: 100px;
 }
+.services .container {
+  padding: 0;
+}
 .title_num {
   font-weight: 600;
   font-size: 30px;
@@ -156,7 +159,7 @@ body {
   color: var(--accent);
 }
 .fs__title {
-  font-size: 100px;
+  font-size: 5vw;
   font-family: var(--heading);
 }
 .number__info {
@@ -168,15 +171,15 @@ body {
 .number {
   text-decoration: none;
   color: var(--light);
-  font-size: 50px;
+  font-size: 3vw;
 }
 .number__about {
-  font-size: 20px;
+  font-size: 1vw;
 }
 /* Элементы услуг */
 .title {
   font-family: var(--heading);
-  font-size: 80px;
+  font-size: 4vw;
   font-weight: 500;
   text-align: center;
   margin-bottom: 4%;
@@ -225,15 +228,15 @@ body {
   font-weight: 500;
 }
 .teaser__title {
-  font-size: 200px;
+  font-size: 9vw;
   font-family: var(--heading);
 }
 .teaser__about {
-  font-size: 26px;
+  font-size: 1.7vw;
   font-family: var(--heading);
 }
 .teaser__info {
-  font-size: 30px;
+  font-size: 1.7vw;
 }
 .teaser__info_base {
   font-weight: 600;
@@ -257,24 +260,30 @@ body {
 /* Элементы блога */
 .blog__wrapper {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+  grid-gap: 15px;
+
   grid-template-rows: 1fr;
+  grid-auto-flow: dense;
+}
+.blog__wrapper_right {
+  grid-column: span 1;
 }
 .blog__name {
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 1vw;
   font-family: var(--heading);
   font-weight: 500;
   margin-bottom: 50px;
 }
 .blog__title {
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 2vw;
   font-family: var(--heading);
   font-weight: 500;
 }
 .blog__desc {
-  font-size: 18px;
+  font-size: 3vh;
   margin-top: 50px;
   margin-bottom: 120px;
 }
@@ -303,7 +312,7 @@ body {
 .pre-footer__consult {
   margin-top: 120px;
   font-family: var(--heading);
-  font-size: 20px;
+  font-size: 4vh;
   line-height: 28px;
   font-weight: 500;
   display: flex;
@@ -315,7 +324,7 @@ body {
 }
 .pre-footer__consult > span {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 3vh;
   text-align: right;
 }
 .pre-footer__consult > button {
@@ -357,14 +366,13 @@ body {
   color: var(--accent);
 }
 .footer-info {
-  font-size: 18px;
+  font-size: 3vh;
   position: relative;
-  /* left: 50%; */
   margin-bottom: 10px;
 }
 .footer__number {
   font-weight: 700;
-  font-size: 50px;
+  font-size: 3vw;
   text-decoration: none;
   color: var(--basic);
   font-family: var(--heading);
@@ -459,15 +467,21 @@ ul > li:before {
   color: var(--basic);
 }
 .cards {
-  display: flex;
-  /* flex-wrap: wrap; */
-  justify-content: center;
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-auto-flow: dense;
+  grid-auto-rows: 480px;
+  grid-gap: 0;
 }
+
 .card {
   cursor: pointer;
   display: flex;
   flex-flow: column;
-  width: 280px;
+  /* width: 280px; */
   height: 480px;
   border: 1px solid var(--secondary_light);
   border-radius: 3%;

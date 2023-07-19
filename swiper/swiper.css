@@ -1,31 +1,21 @@
-/* *,
-*::before,
-*::after {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  box-sizing: border-box;
-} */
-
 .swiper-pagination {
-  margin-top: 30px;
-}
-.swiper-pagination-custom {
   text-align: center;
   position: relative;
+  bottom: 10px; /* Регулируйте отступ от слайдера в зависимости от ваших потребностей */
 }
-.swiper-pagination-custom .swiper-pagination-current {
+.swiper-pagination-custom {
+  position: relative;
 }
 
 .swiper {
-  width: 880px; /* Увеличиваем ширину контейнера для учета видимости боковых слайдов */
+  width: 600px;
   height: 466px;
-  overflow: hidden;
   position: relative;
+  margin: 0 auto;
 }
 
 .swiper-slide {
-  width: 780px; /* Устанавливаем ширину активного слайда */
+  width: 500px;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -39,6 +29,7 @@
   height: 100%;
   object-fit: cover;
   image-rendering: auto;
+  border-radius: 4px;
 }
 .swiper-slide.swiper-slide-active img {
   border-radius: 4px;
