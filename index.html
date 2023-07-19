@@ -15,20 +15,32 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__right">
-        <a href="/">
-          <img src="img/logo.png" alt="" class="logo" />
-        </a>
-        <button class="btn btn__light">Консультация инженера</button>
+      <div class="header__wrap">
+        <div class="header__right">
+          <a href="/">
+            <img src="img/logo.png" alt="" class="logo" id="logo" />
+          </a>
+          <button class="btn btn__light">Консультация инженера</button>
+        </div>
+        <div class="humb">
+          <div class="humb__field" id="hamb">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+        <nav class="menu" id="menu">
+          <a href="/" class="link">Главная</a>
+          <a href="#services" class="link">Услуги</a>
+          <a href="porfolio/portfolio.html" class="link">
+            Выполненные проекты
+          </a>
+          <a href="about/about.html" class="link">О компании</a>
+          <a href="#blog" class="link">Блог</a>
+          <a href="#contacts" class="link">Контакты</a>
+        </nav>
       </div>
-      <nav class="menu">
-        <a href="/" class="link">Главная</a>
-        <a href="#services" class="link">Услуги</a>
-        <a href="porfolio/portfolio.html" class="link"> Выполненные проекты </a>
-        <a href="about/about.html" class="link">О компании</a>
-        <a href="#blog" class="link">Блог</a>
-        <a href="#contacts" class="link">Контакты</a>
-      </nav>
+      <div class="popup" id="popup"></div>
     </header>
     <main>
       <section class="fs" id="base">
@@ -273,7 +285,6 @@
           </details>
         </div>
       </section>
-
       <section class="blog" id="blog">
         <div class="container">
           <div class="blog__wrapper">
@@ -317,7 +328,6 @@
           <!-- Пагинация -->
         </div>
       </section>
-
       <section class="clients">
         <div class="container">
           <h2 class="title">Клиенты с которыми работали</h2>
@@ -416,7 +426,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="faq/faq.js"></script>
     <script src="swiper/swiper.js"></script>
-    <div class="ppk-dot-outline"></div>
-    <div class="ppk-dot"></div>
+    <script src="burger-menu.js"></script>
   </body>
 </html>
