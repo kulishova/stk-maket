@@ -1,12 +1,8 @@
-.work:nth-child(9) {
-  top: 2% !important;
-}
-
 .gallery__wrapper {
   grid-auto-rows: 360px;
 }
 .image {
-  background: var(--bg-3) center / cover;
+  background: var(--bg-2) center / cover;
 }
 .image:nth-child(3) {
   grid-column: span 2;

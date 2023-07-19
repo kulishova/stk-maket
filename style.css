@@ -28,6 +28,7 @@ body {
   width: 100%;
   max-width: 1440px;
   margin: auto;
+  padding: 0 40px;
 }
 
 /* Основные блоки */
@@ -36,7 +37,7 @@ body {
   color: var(--light);
   position: relative;
   background: url(img/fs_bg.png) center / cover;
-  height: 100vh;
+  /* height: 100vh; */
   padding-top: 20%;
   text-transform: uppercase;
 }
@@ -89,6 +90,10 @@ body {
 /* Блок перед футером */
 .pre-footer {
   margin-top: 120px;
+}
+.pre-footer .container {
+  display: flex;
+  justify-content: center;
 }
 /* Футер */
 .footer {
@@ -186,25 +191,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-}
-.project__card {
-  cursor: pointer;
-  width: 600px;
-  margin: 3% 1%;
-  display: inline-block;
   overflow: hidden;
 }
-.wrapper__img .project_img:hover {
-  border-radius: 4px;
-  padding: 2%;
-  transform: scale(1.2);
+.project__card {
+  width: 600px;
+  margin: 3% 1%;
+  overflow: hidden;
 }
 
-.project_img {
-  transition: all 1s ease;
-  display: block;
-  width: 100%;
-}
 .project__footer {
   display: flex;
   justify-content: space-between;
@@ -291,6 +285,9 @@ body {
   text-transform: uppercase;
   font-family: var(--heading);
 }
+
+/*  */
+
 /* Элементы блока с клиентами */
 .cards__client {
   margin-top: 30px;
@@ -315,7 +312,6 @@ body {
   max-width: 354px;
   height: 230px;
   position: relative;
-  left: 42%;
 }
 .pre-footer__consult > span {
   font-weight: 400;
@@ -442,9 +438,17 @@ ul > li:before {
   color: var(--light);
   background-color: var(--accent);
 }
+.btn__accent:hover {
+  background-color: var(--light);
+  color: var(--accent);
+}
 .btn__accent-light {
   border: 1px solid var(--accent);
   color: var(--accent);
+}
+.btn__accent-light:hover {
+  background-color: var(--accent);
+  color: var(--light);
 }
 .btn__dark {
   background-color: var(--basic);
@@ -456,7 +460,7 @@ ul > li:before {
 }
 .cards {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: center;
 }
 .card {
@@ -479,9 +483,46 @@ ul > li:before {
   color: var(--light);
   background-color: var(--accent);
 }
+a:hover {
+  color: var(--accent);
+}
+
+.scale {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.scale img {
+  transition: 1s;
+  display: block;
+}
+
+.scale img:hover {
+  transform: scale(1.2);
+}
 
 /* Адаптивные стили */
-@media screen and (max-width: 768px) {
+
+/* @media screen and (max-width: 480px) {
+  .fs__title {
+    font-size: 40px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
   .fs__title {
     font-size: 60px;
   }
@@ -489,14 +530,13 @@ ul > li:before {
   .title {
     font-size: 50px;
   }
-}
-
-@media screen and (max-width: 480px) {
-  .fs__title {
-    font-size: 40px;
-  }
-
-  .title {
-    font-size: 40px;
+  .cards {
+    flex-wrap: wrap;
   }
 }
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+} */

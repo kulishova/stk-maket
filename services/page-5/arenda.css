@@ -1,15 +1,16 @@
 .complex__works_img {
   margin: 5%;
 }
-/* .consultation {
-  margin: 4% 6% 6%;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-}
-.gallery-container {
-  padding: 0px 8%;
-}
 
-.consultation {
-  margin: 4% 0% 6%;
-} */
+.gallery__wrapper {
+  grid-auto-rows: 200px;
+}
+.image {
+  background: var(--bg-5) center / cover;
+}
+.image:nth-child(9) {
+  grid-column: span 2;
+}
+.image:nth-child(10) {
+  grid-column: span 2;
+}

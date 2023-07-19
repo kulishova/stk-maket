@@ -18,18 +18,22 @@ body {
   margin: 10% auto;
 }
 .complex-services__wrapper {
-  margin: 10% 23% 8%;
-  width: 845px;
+  padding: 0 15%;
+  /* margin: 10% 23% 8%; */
+  /* width: 845px; */
 }
-
+.complex-services .container {
+  display: flex;
+  justify-content: center;
+}
 .consultation {
-  margin: 10% -8% 6%;
+  margin: 10% 0 10%;
   display: grid;
   grid-column-gap: 20%;
   grid-template-columns: 2fr 1fr;
 }
 .article {
-  /* margin: 12% 26% 6%; */
+  margin-top: 10%;
 }
 /* Шапка */
 .header__services {
@@ -43,9 +47,7 @@ body {
   font-size: 14px;
   text-transform: uppercase;
 }
-.link-services:hover {
-  color: var(--accent);
-}
+
 .link_main {
   text-decoration: none;
   color: var(--accent);

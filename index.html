@@ -131,11 +131,11 @@
           <h2 class="title">Выполненные <br />проекты</h2>
           <div class="projects__cards">
             <div class="project__card">
-              <div class="wrapper__img">
-                <a href="porfolio/portfolio.html" class="services__link">
+              <a href="porfolio/portfolio.html" class="services__link">
+                <div class="scale">
                   <img src="img/project-1.png" alt="" class="project_img" />
-                </a>
-              </div>
+                </div>
+              </a>
               <div class="project__footer">
                 <a href="porfolio/portfolio.html" class="services__link">
                   <h5 class="project__title">ООО «Транснефть-ТСД»</h5>
@@ -147,7 +147,9 @@
             </div>
             <div class="project__card">
               <a href="porfolio/portfolio.html" class="services__link">
-                <img src="img/project-2.png" alt="" class="project_img" />
+                <div class="scale">
+                  <img src="img/project-2.png" alt="" class="project_img" />
+                </div>
               </a>
               <div class="project__footer">
                 <a href="porfolio/portfolio.html" class="services__link">
@@ -162,7 +164,9 @@
             </div>
             <div class="project__card">
               <a href="porfolio/portfolio.html" class="services__link">
-                <img src="img/project-3.png" alt="" class="project_img" />
+                <div class="scale">
+                  <img src="img/project-3.png" alt="" class="project_img" />
+                </div>
               </a>
               <div class="project__footer">
                 <a href="porfolio/portfolio.html" class="services__link">
@@ -178,7 +182,9 @@
             </div>
             <div class="project__card">
               <a href="porfolio/portfolio.html" class="services__link">
-                <img src="img/project-4.png" alt="" class="project_img" />
+                <div class="scale">
+                  <img src="img/project-4.png" alt="" class="project_img" />
+                </div>
               </a>
               <div class="project__footer">
                 <a href="" class="services__link">
@@ -193,10 +199,10 @@
         </div>
       </section>
       <section class="teaser">
-        <div class="teaser__wrapper_img">
-          <img src="img/gen-dir.png" alt="" class="img__teaser" />
-        </div>
         <div class="container">
+          <div class="teaser__wrapper_img">
+            <img src="img/gen-dir.png" alt="" class="img__teaser" />
+          </div>
           <div class="teaser__wrapper">
             <div class="teaser__year">
               <h3 class="teaser__title">2018</h3>
@@ -299,6 +305,8 @@
                   <img src="img/swiper/swiper-4.png" alt="" />
                 </div>
               </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
             </div>
           </div>
           <!-- Пагинация -->
@@ -321,15 +329,17 @@
       </section>
       <section class="pre-footer" id="contacts">
         <img src="img/pre-footer.png" alt="" class="pre-foter__img" />
-        <div class="pre-footer__consult">
-          <div class="pre-footer__info">
-            Инженер проконсультирует Вас по всем вопросам
+        <div class="container">
+          <div class="pre-footer__consult">
+            <div class="pre-footer__info">
+              Инженер проконсультирует Вас по всем вопросам
+            </div>
+            <button class="btn btn__accent">Консультация инженера</button>
+            <span>
+              Мы перезвоним в течении <br />
+              20 минут
+            </span>
           </div>
-          <button class="btn btn__accent">Консультация инженера</button>
-          <span>
-            Мы перезвоним в течении <br />
-            20 минут
-          </span>
         </div>
       </section>
       <footer class="footer">

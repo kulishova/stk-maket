@@ -56,7 +56,7 @@ details.details:hover {
 }
 summary:before {
   top: 1.8em;
-  right: 28.1em;
+  right: -11.9em;
   color: var(--light);
   background: url('img/plus-sm.png') no-repeat 50% 50% / 1em 1em;
   width: 1em;
@@ -69,6 +69,7 @@ summary > p {
   /* right: 28.1em; */
   text-align: left;
 }
+
 details[open] > summary:before {
   transform: scale(1, -1);
 }

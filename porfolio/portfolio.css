@@ -31,9 +31,3 @@
 .fs-page-1 {
   margin: 5% 10% auto;
 }
-.project__card {
-  transition: 1.3s;
-}
-.project__card:hover {
-  transform: scale(1.1);
-}

@@ -1,21 +1,7 @@
 .fs {
   background: url(img/bg.png) center / cover;
 }
-.fs::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 0;
-  opacity: 0.5;
-  background-color: var(--basic);
-}
-.fs > * {
-  position: relative;
-  z-index: 0;
-}
+
 .fs__info {
   display: grid;
   grid-template-columns: 4fr 3fr;
@@ -34,7 +20,9 @@
   align-items: start;
   height: 100%;
 }
-
+.gallery {
+  margin-top: 10%;
+}
 .cards-info {
   margin-top: 10%;
 }
@@ -64,4 +52,26 @@
 
 .card-info > span {
   font-size: 18px;
+}
+
+.complex-services {
+  margin-top: 10%;
+}
+
+/* Gallery */
+.gallery__wrapper {
+  grid-auto-rows: 360px;
+}
+.image {
+  /* background: url(img/gallery/gal-1.png); */
+  background: var(--bg-6) center / cover;
+}
+.image:nth-child(3) {
+  grid-column: span 2;
+}
+.image:nth-child(4) {
+  grid-column: span 2;
+}
+.image:nth-child(8) {
+  grid-column: span 2;
 }

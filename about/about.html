@@ -4,16 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>О компании</title>
+    <!-- Основные стили -->
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../services/style2.css" />
     <link rel="stylesheet" href="../gallery/gallery.css" />
+    <link rel="stylesheet" href="about.css" />
+
+    <!-- Слайдер -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="../swiper/swiper-about.css" />
-    <link rel="stylesheet" href="about.css" />
   </head>
   <body>
     <header class="header header__services">
@@ -105,52 +108,18 @@
     <section class="gallery">
       <div class="container">
         <h3 class="complex-services__title">Галерея из наших проектов</h3>
-        <div class="grid">
-          <div class="grid-row">
-            <div class="grid-item grid-item-2">
-              <img src="img/gallery/gal-1.png" alt="" />
-            </div>
-            <div class="grid-item grid-item-2">
-              <img src="img/gallery/gal-2.png" alt="" />
-            </div>
-          </div>
-          <div class="grid-row">
-            <div class="grid-item grid-item-2">
-              <img src="img/gallery/gal-3.png" alt="" />
-            </div>
-            <div class="grid-item grid-item-2">
-              <img src="img/gallery/gal-4.png" alt="" />
-            </div>
-          </div>
-          <div class="grid-row">
-            <div class="grid-item grid-item-full">
-              <img src="img/gallery/gal-5.png" alt="" />
-            </div>
-          </div>
-          <div class="grid-row">
-            <div class="grid-item grid-item-3">
-              <img src="img/gallery/gal-6.png" alt="" />
-            </div>
-            <div class="grid-item grid-item-3">
-              <img src="img/gallery/gal-7.png" alt="" />
-            </div>
-            <div class="grid-item grid-item-3">
-              <img src="img/gallery/gal-8.png" alt="" />
-            </div>
-          </div>
-          <div class="grid-row">
-            <div class="grid-item grid-item-2">
-              <img src="img/gallery/gal-9.png" alt="" />
-            </div>
-            <div class="grid-item grid-item-2">
-              <img src="img/gallery/gal-10.png" alt="" />
-            </div>
-          </div>
-          <div class="grid-row">
-            <div class="grid-item grid-item-full">
-              <img src="img/gallery/gal-11.png" alt="" />
-            </div>
-          </div>
+        <div class="gallery__wrapper">
+          <div class="image" style="--bg: url(img/gallery/gal-1.png)"></div>
+          <div class="image" style="--bg: url(img/gallery/gal-2.png)"></div>
+          <div class="image" style="--bg: url(img/gallery/gal-3.png)"></div>
+          <div class="image" style="--bg: url(img/gallery/gal-4.png)"></div>
+          <div class="image" style="--bg: url(img/gallery/gal-5.png)"></div>
+          <div class="image" style="--bg: url(img/gallery/gal-6.png)"></div>
+          <div class="image" style="--bg: url(img/gallery/gal-7.png)"></div>
+          <div class="image" style="--bg: url(img/gallery/gal-8.png)"></div>
+          <div class="image" style="--bg: url(img/gallery/gal-9.png)"></div>
+          <div class="image" style="--bg: url(img/gallery/gal-10.png)"></div>
+          <div class="image" style="--bg: url(img/gallery/gal-11.png)"></div>
         </div>
       </div>
     </section>
@@ -161,7 +130,9 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="slide-content">
-                <img src="../blog/img/slider/slide-1.png" alt="Фото" />
+                <div class="scale">
+                  <img src="../blog/img/slider/slide-1.png" alt="Фото" />
+                </div>
                 <div class="date">09.06.2023 г.</div>
                 <h3 class="slide-content__title">
                   Тут выводится заголовок для записи блога и превью
@@ -171,7 +142,9 @@
 
             <div class="swiper-slide">
               <div class="slide-content">
-                <img src="../blog/img/slider/slide-2.png" alt="Фото" />
+                <div class="scale">
+                  <img src="../blog/img/slider/slide-2.png" alt="Фото" />
+                </div>
                 <div class="date">09.06.2023 г.</div>
                 <h3 class="slide-content__title">
                   Второй пример вывода заголовка записи блога
@@ -180,14 +153,18 @@
             </div>
             <div class="swiper-slide">
               <div class="slide-content">
-                <img src="../blog/img/slider/slide-3.png" alt="Фото" />
+                <div class="scale">
+                  <img src="../blog/img/slider/slide-3.png" alt="Фото" />
+                </div>
                 <div class="date">09.06.2023 г.</div>
                 <h3 class="slide-content__title">Заголовок в одну строку</h3>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="slide-content">
-                <img src="../blog/img/slider/slide-4.png" alt="Фото" />
+                <div class="scale">
+                  <img src="../blog/img/slider/slide-4.png" alt="Фото" />
+                </div>
                 <div class="date">09.06.2023 г.</div>
                 <h3 class="slide-content__title">
                   Более длинный заголовок выводится для записи блога и превью
@@ -197,7 +174,9 @@
             </div>
             <div class="swiper-slide">
               <div class="slide-content">
-                <img src="../blog/img/slider/slide-5.png" alt="Фото" />
+                <div class="scale">
+                  <img src="../blog/img/slider/slide-5.png" alt="Фото" />
+                </div>
                 <div class="date">09.06.2023 г.</div>
                 <h3 class="slide-content__title">
                   Тут выводится заголовок для записи блога и превью
@@ -206,7 +185,9 @@
             </div>
             <div class="swiper-slide">
               <div class="slide-content">
-                <img src="../blog/img/slider/slide-6.png" alt="Фото" />
+                <div class="scale">
+                  <img src="../blog/img/slider/slide-6.png" alt="Фото" />
+                </div>
                 <div class="date">09.06.2023 г.</div>
                 <h3 class="slide-content__title">
                   Тут выводится заголовок для записи блога и превью
@@ -219,20 +200,22 @@
         </div>
       </div>
     </section>
-    <section class="pre-footer" id="contacts">
+    <section class="pre-footer">
       <img src="../img/pre-footer.png" alt="" class="pre-foter__img" />
-      <div class="pre-footer__consult">
-        <div class="pre-footer__info">
-          Инженер проконсультирует Вас по всем вопросам
+      <div class="container">
+        <div class="pre-footer__consult">
+          <div class="pre-footer__info">
+            Инженер проконсультирует Вас по всем вопросам
+          </div>
+          <button class="btn btn__accent">Консультация инженера</button>
+          <span>
+            Мы перезвоним в течении <br />
+            20 минут
+          </span>
         </div>
-        <button class="btn btn__accent">Консультация инженера</button>
-        <span>
-          Мы перезвоним в течении <br />
-          20 минут
-        </span>
       </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
       <img src="../img/logo-dark.png" alt="СТК" class="logo" />
       <div class="footer__wrapper">
         <div class="footer__wrapper-menu">
@@ -298,10 +281,8 @@
         </div>
       </div>
     </footer>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script src="/path/to/masonry.pkgd.min.js"></script>
-    <script src="../gallery/gallery.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="../swiper/swiper-about.js"></script>
   </body>
 </html>

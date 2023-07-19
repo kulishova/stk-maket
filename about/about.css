@@ -8,6 +8,7 @@
 }
 
 .slide-content {
+  cursor: pointer;
   text-align: center;
 }
 .swiper-container {
@@ -34,4 +35,28 @@
 
 .news {
   margin-top: 10%;
+}
+
+/* Gallery */
+.image {
+  background: var(--bg) center / cover;
+}
+.gallery__wrapper {
+  grid-auto-rows: 400px;
+}
+.image:nth-child(1) {
+  grid-column: span 2;
+}
+.image:nth-child(2) {
+  grid-column: span 2;
+}
+.image:nth-child(3) {
+  grid-column: span 3;
+}
+.image:nth-child(5) {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+.image:nth-child(10) {
+  grid-column: span 3;
 }

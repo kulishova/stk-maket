@@ -8,14 +8,14 @@
 }
 .post {
   margin: 2%;
-  transition: 1.3s;
+  /* transition: 1.3s; */
 }
-.post__img {
+/* .post__img {
   display: block;
 }
 .post:hover {
   transform: scale(1.1);
-}
+} */
 
 .blog-info {
   margin-top: 10%;
