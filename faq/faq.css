@@ -15,7 +15,10 @@
 }
 
 .faq__container {
-  height: 100%;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 2s ease-out;
 }
 
 details {
@@ -28,9 +31,7 @@ details {
   text-align: center;
   text-align: left;
 }
-details > p {
-  font-size: 3vh;
-}
+
 summary::-webkit-details-marker {
   display: none;
 }
@@ -45,7 +46,7 @@ summary {
   margin: 0 auto;
   display: block;
   padding: 1.8em 1em 0.3em 0.9em;
-  font-size: 3.2vh;
+  font-size: 1vw;
   cursor: pointer;
   position: relative;
   text-transform: uppercase;
@@ -68,16 +69,20 @@ summary:before {
   position: absolute;
   transition: transform 0.5s;
 }
-summary > p {
-  /* right: 28.1em; */
-  text-align: left;
-}
 
 details[open] > summary:before {
   transform: scale(1, -1);
 }
+
+details[open] .faq__container {
+  max-height: 500px; /* Высота, достаточная для отображения содержимого */
+  opacity: 1;
+}
 summary ~ * {
-  padding: 2em 30em 29px 20.4em;
+  padding: 2em 15em 26px 11.4em;
+  text-align: left;
+  line-height: 2.3em;
+  font-size: 1vw;
 }
 details[open] summary ~ * {
   animation: sweep 0s ease-in-out;
@@ -92,7 +97,6 @@ details[open] summary ~ * {
 }
 summary:focus {
   outline: 0;
-  /* box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3), inset 0 0 2px rgba(0, 0, 0, 0.3); */
 }
 
 .active {

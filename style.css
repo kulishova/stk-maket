@@ -20,7 +20,7 @@ body {
   background-color: var(--light);
 }
 main {
-  width: 100%;
+  width: 100vw;
 }
 /* Первая страница */
 
@@ -80,6 +80,12 @@ main {
 /* Блок ответов */
 .faq {
   margin-top: 120px;
+}
+.faq .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 /* Блог */
 .blog {
@@ -290,7 +296,7 @@ main {
   font-weight: 500;
 }
 .blog__desc {
-  font-size: 3vh;
+  font-size: 2vh;
   margin-top: 50px;
   margin-bottom: 120px;
 }
@@ -319,7 +325,7 @@ main {
 .pre-footer__consult {
   margin-top: 120px;
   font-family: var(--heading);
-  font-size: 4vh;
+  font-size: 2.5vh;
   line-height: 28px;
   font-weight: 500;
   display: flex;
@@ -331,7 +337,7 @@ main {
 }
 .pre-footer__consult > span {
   font-weight: 400;
-  font-size: 3vh;
+  font-size: 2vh;
   text-align: right;
 }
 .pre-footer__consult > button {
@@ -373,13 +379,13 @@ main {
   color: var(--accent);
 }
 .footer-info {
-  font-size: 3vh;
+  font-size: 2vh;
   position: relative;
   margin-bottom: 10px;
 }
 .footer__number {
   font-weight: 700;
-  font-size: 3vw;
+  font-size: 4vh;
   text-decoration: none;
   color: var(--basic);
   font-family: var(--heading);
@@ -440,7 +446,7 @@ ul > li:before {
   text-transform: uppercase;
   border: 1px solid;
   width: auto;
-  font-size: 3vh;
+  /* font-size: 3vh; */
 }
 .btn__light {
   color: var(--light);
@@ -521,4 +527,11 @@ a:hover {
 
 .scale img:hover {
   transform: scale(1.2);
+}
+
+/* Адаптив */
+@media (max-width: 1200px) {
+  summary ~ * {
+    padding: 0 !important;
+  }
 }

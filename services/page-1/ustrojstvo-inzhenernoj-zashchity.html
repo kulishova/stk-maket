@@ -7,27 +7,30 @@
     <link rel="stylesheet" href="../../style.css" />
     <link rel="stylesheet" href="../../faq/faq.css" />
     <link rel="stylesheet" href="../style2.css" />
+    <link rel="stylesheet" href="../../burger-menu/burger-menu.css" />
     <link rel="stylesheet" href="../../gallery/gallery.css" />
     <link rel="stylesheet" href="style-gallery.css" />
   </head>
   <body>
     <header class="header header__services">
-      <div class="header__right">
-        <a href="/">
-          <img src="../../img/logo-dark.png" alt="" class="logo" />
-        </a>
-        <button class="btn btn__accent-light">Консультация инженера</button>
+      <div class="header__wrap">
+        <div class="header__right">
+          <a href="/">
+            <img src="../../img/logo-dark.png" alt="" class="logo" />
+          </a>
+          <button class="btn btn__accent-light">Консультация инженера</button>
+        </div>
+        <nav class="menu">
+          <a href="/" class="link-services">Главная</a>
+          <a href="/" class="link-services">Услуги</a>
+          <a href="../../porfolio/portfolio.html" class="link-services"
+            >Выполненные проекты</a
+          >
+          <a href="../../about/about.html" class="link-services">О компании</a>
+          <a href="../../blog/blog.html" class="link-services">Блог</a>
+          <a href="/" class="link-services">Контакты</a>
+        </nav>
       </div>
-      <nav class="menu">
-        <a href="/" class="link-services">Главная</a>
-        <a href="/" class="link-services">Услуги</a>
-        <a href="../../porfolio/portfolio.html" class="link-services"
-          >Выполненные проекты</a
-        >
-        <a href="../../about/about.html" class="link-services">О компании</a>
-        <a href="../../blog/blog.html" class="link-services">Блог</a>
-        <a href="/" class="link-services">Контакты</a>
-      </nav>
     </header>
     <section class="fs-page-1">
       <div class="container">
@@ -88,30 +91,12 @@
     <section class="gallery">
       <div class="container">
         <div class="gallery__wrapper">
-          <div
-            class="image"
-            style="--bg-2: url(page-1/img/gallery/gal-1.png)"
-          ></div>
-          <div
-            class="image"
-            style="--bg-2: url(page-1/img/gallery/gal-2.png)"
-          ></div>
-          <div
-            class="image"
-            style="--bg-2: url(page-1/img/gallery/gal-3.png)"
-          ></div>
-          <div
-            class="image"
-            style="--bg-2: url(page-1/img/gallery/gal-4.png)"
-          ></div>
-          <div
-            class="image"
-            style="--bg-2: url(page-1/img/gallery/gal-5.png)"
-          ></div>
-          <div
-            class="image"
-            style="--bg-2: url(page-1/img/gallery/gal-6.png)"
-          ></div>
+          <div class="image" style="--bg-2: url(img/gallery/gal-1.png)"></div>
+          <div class="image" style="--bg-2: url(img/gallery/gal-2.png)"></div>
+          <div class="image" style="--bg-2: url(img/gallery/gal-3.png)"></div>
+          <div class="image" style="--bg-2: url(img/gallery/gal-4.png)"></div>
+          <div class="image" style="--bg-2: url(img/gallery/gal-5.png)"></div>
+          <div class="image" style="--bg-2: url(img/gallery/gal-6.png)"></div>
         </div>
       </div>
     </section>
@@ -337,7 +322,7 @@
         </div>
       </div>
     </footer>
-
+    <script src="../../burger-menu/burger-menu.js"></script>
     <script src="../../faq/faq.js"></script>
   </body>
 </html>
