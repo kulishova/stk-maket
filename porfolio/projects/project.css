@@ -31,7 +31,9 @@
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   grid-column-gap: 5%;
+  grid-auto-rows: 8em;
 }
+
 .card-info {
   display: flex;
   flex-direction: column;
